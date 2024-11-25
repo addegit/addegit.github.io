@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Addison Englhardt</title>
+    <link rel="icon" type="image/x-icon" href="/images/uwicon.jpeg">
+  </head>
+  <body>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+  
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid" style="width: 80%;">
+          <a class="navbar-brand" href="./index.html">Addison Englhardt</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#bio" onclick="collapseNavbar('navbarNav')">Home</a>
+              </li>
+              <!--<li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#publications" onclick="collapseNavbar('navbarNav')">Publications</a>
+              </li>-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#experience" onclick="collapseNavbar('navbarNav')">Experience</a>
+              </li>
+    <!--          <li class="nav-item">-->
+    <!--            <a class="nav-link" href="./projects">Projects</a>-->
+    <!--          </li>-->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- body -->
+  <div class="container-fluid" style="width: 80%; margin-bottom: 60px;">
+    <!-- Biography -->
+    <div class="row" id="bio" style="margin-top: 74px; scroll-margin-top: 74px">
+      <div class="col-md-4" style="text-align: center;">
+        <img src="./images/headshot.jpeg" alt="Profile Picture" style="max-width: 100%; max-height: 250px;">
+       <!-- <div style="margin-top: 5px;">Email: zacharye@cs.washington.edu</div> -->
+        <div>
+            <a href = "mailto: addisonenglhardt2029@u.northwestern.edu">Email</a> | 
+            <a href="https://www.linkedin.com/in/addison-englhardt-3181a21b8?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="col-md-8" style="margin-top: 10px;">
+        <h3>About Me</h3>
+        <div>Hi! I am first year PhD student in the 
+          <a href="https://vaksustainablecomputing.com/" target="_blank">VAK Sustainable Computing Lab</a>
+          at Northwestern University where I am advised by
+          <a href="https://niveditaarora.com/" target="_blank">Nivedita Arora</a>.
+          I completed my bachelors in mechanical engineering at Northeastern University during which I completed co-op's at SiTration
+          and Bosch Thermotechnology. <br><br> I'm passionate about designing devices with a sustainability first approach and am excited to be getting started at Northwestern!  </p>
+        </div>
+      </div>
+    </div>
+    <!---
+    <div class="row" id="publications"></div>
+      <h4 style="margin-top: 30px;">Selected Publications</h4>
+      <p style="font-size:14px">* Denotes Equal Contribution</p>
+      <div class="row" style="margin-top: 0px;">
+        <div class="col-md-4">
+          <img src="./images/millimobile.png" alt="MobiCom23" style="max-width: 100%; max-height: 250px;">
+        </div>
+        <div class="col-md-8">
+          <p><strong>MilliMobile: An Autonomous Battery-free Wireless Microrobot</strong></p>
+          <div>
+            Kyle Johnson*, <strong>Zachary Englhardt*</strong>, Vicente Arroyos*, Dennis Yin, Shwetak Patel, Vikram Iyer
+          </div>
+          <div>
+            <i>MobiCom</i> (2023).
+            <a href="https://millimobile.cs.washington.edu">[Project Page]</a>
+            <a href="./papers/millimobile-compressed.pdf">[Paper]</a></p>
+            <p style="font-size:15px">
+              Covered by 
+              <a href="https://www.geekwire.com/2023/univ-of-washington-researchers-roll-out-tiny-battery-free-autonomous-robot-called-millimobile/" target="_blank">[GeekWire]</a>
+              <a href="https://www.washington.edu/news/2023/09/27/millimobile-battery-free-autonomous-self-driving-robot-solar/" target="_blank">[UW]</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4">
+          <img src="./images/facebit.png" alt="Ubicomp22" style="max-width: 100%; max-height: 250px;">
+        </div>
+        <div class="col-md-8">
+          <p><strong>FaceBit: Smart Face Masks Platform </strong></p>
+          <div>
+            Alexander Curtiss*, Blaine Rothrock*, Nivedita Arora, Jason Huang, <strong>Zachary Englhardt</strong>, Aaron Patrick-Empedrado, 
+            Chixiang Wang, Saad Ahmed, Yang Zhang, Nabil Alshurafa, Josiah Hester
+          </div>
+          <div>
+            <i>Ubicomp</i> (2022).
+            <a href="./papers/facebit.pdf">[Paper]</a></p>
+            <p style="font-size:15px">
+              Covered by 
+              <a href="https://www.scientificamerican.com/article/new-sensor-tells-you-how-well-your-mask-is-working/" target="_blank">[Scientific American]</a>
+              <a href="https://technews.acm.org/archives.cfm?fo=2022-01-jan/jan-14-2022.html" target="_blank">[ACM TechNews]</a>
+              <a href="https://www.forbes.com/sites/saibala/2022/01/13/smart-face-masks--researchers-have-created-a-way-to-digitize-masks/?sh=6d9ca7af55ae" target="_blank">[Forbes]</a>
+              <a href="https://techcrunch.com/2022/01/13/this-device-attaches-magnetically-to-a-face-mask-to-monitor-the-wearers-vitals/" target="_blank">[TechCrunch]</a>
+              <a href="https://www.engadget.com/facebit-smart-face-mask-sensor-205238551.html" target="_blank">[Engaget]</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    -->
+    <div class="row" id="experience" style="margin-bottom: 30px"></div>
+      <h4 style="margin-top: 30px;">Experience</h4>
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-8">
+          <div>Northwestern University</div>
+          <div><i>PhD Student | Advisor: Nivedita Arora</i> </div>
+        </div>
+        <div class="col-4" style="text-align: right;">
+          <div>Sept 2024 - present </div>
+          <div>Evanston, Illinois </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-8">
+          <div>Electronic Surfaces and Organic Interfaces Lab - Northeastern University</div>
+          <div><i>Research Assistant</i> </div>
+        </div>
+        <div class="col-4" style="text-align: right;">
+          <div>September 2023 - March 2024 </div>
+          <div>Boston, Massachusetts</div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-8">
+          <div>Bosch
+          </div>
+          <div><i>Product Management Co-op</i> </div>
+        </div>
+        <div class="col-4" style="text-align: right;">
+          <div>January 2023 - June 2023 </div>
+          <div>Watertown, Massachusetts </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-8">
+          <div>SiTration </div>
+          <div><i>Research and Development Co-op</i> </div>
+        </div>
+        <div class="col-4" style="text-align: right;">
+          <div>January 2022 - June 2022 </div>
+          <div>Cambridge, Massachusetts</div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-8">
+          <div>Northeastern University College of Engineering</div>
+          <div><i>Career Peer Mentor</i> </div>
+        </div>
+        <div class="col-4" style="text-align: right;">
+          <div>August 2023 - May 2024</div>
+          <div>Boston, Massachusetts </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 10px;">
+          <div class="col-8">
+            <div>Einstein Tutoring</div>
+            <div><i>Tutor</i> </div>
+          </div>
+          <div class="col-4" style="text-align: right;">
+            <div>January 2024 - May 2024</div>
+            <div>Boston, Massachusetts</div>
+          </div>
+      </div>
+
+      
+</body>
+</html>
